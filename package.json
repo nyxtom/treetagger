@@ -1,0 +1,37 @@
+{
+  "name": "treetagger",
+  "description": "Node.js module for interfacing with the TreeTagger toolkit by Helmut Schmid.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nyxtom/treetagger",
+  "author": {
+    "name": "Thomas Holloway",
+    "email": "nyxtom@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nyxtom/treetagger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nyxtom/treetagger/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nyxtom/treetagger/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/treetagger",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "keywords": []
+}
