@@ -7,20 +7,19 @@ Install the module with: `npm install treetagger`
 
 ```javascript
 var treetagger = require('treetagger');
-treetagger.awesome(); // "awesome"
+treetagger.tag("This is a test!", function (err, buffer) {
+    console.log(buffer.toString());
+});
+
+/*
+This  DT  this
+is  VBZ be
+a   DT  a
+test    NN  test
+!   SENT    !
+*/
+
 ```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_
 
 ## License
 Copyright (c) 2013 Thomas Holloway  
