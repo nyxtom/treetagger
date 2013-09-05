@@ -1,4 +1,4 @@
-# treetagger [![Build Status](https://secure.travis-ci.org/nyxtom/treetagger.png?branch=master)](http://travis-ci.org/nyxtom/treetagger)
+# treetagger 
 
 Node.js module for interfacing with the TreeTagger toolkit by Helmut Schmid.
 
