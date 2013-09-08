@@ -7,16 +7,16 @@ Install the module with: `npm install treetagger`
 
 ```javascript
 var treetagger = require('treetagger');
-treetagger.tag("This is a test!", function (err, buffer) {
-    console.log(buffer.toString());
+treetagger.tag("This is a test!", function (err, results) {
+    console.log(results);
 });
 
 /*
-This  DT  this
-is  VBZ be
-a   DT  a
-test    NN  test
-!   SENT    !
+[ { t: 'This', pos: 'DT', l: 'this' },
+  { t: 'is', pos: 'VBZ', l: 'be' },
+  { t: 'a', pos: 'DT', l: 'a' },
+  { t: 'test', pos: 'NN', l: 'test' },
+  { t: '!', pos: 'SENT', l: '!' } ]
 */
 
 ```
