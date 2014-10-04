@@ -6,8 +6,9 @@ Node.js module for interfacing with the TreeTagger toolkit by Helmut Schmid.
 Install the module with: `npm install treetagger`
 
 ```javascript
-var treetagger = require('treetagger');
-treetagger.tag("This is a test!", function (err, results) {
+var Treetagger = require('treetagger');
+var tagger = new Treetagger();
+tagger.tag("This is a test!", function (err, results) {
     console.log(results);
 });
 
